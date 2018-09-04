@@ -45,8 +45,8 @@
                 {
                     "type" : "git",
                     "url" : "https://github.com/Unrud/remote-touchpad",
-                    "tag" : "0.0.6",
-                    "commit" : "8a558c0437b5543f583d4cb1fe0c816e06580eac",
+                    "tag" : "0.0.7",
+                    "commit" : "057342bbadb31f01218efb8f4177a167434f5fd9",
                     "dest" : "src/github.com/unrud/remote-touchpad"
                 }
             ],
