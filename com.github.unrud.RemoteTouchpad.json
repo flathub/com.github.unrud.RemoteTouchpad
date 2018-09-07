@@ -21,7 +21,7 @@
                 {
                     "type" : "git",
                     "url" : "https://github.com/golang/net",
-                    "commit" : "afe8f62b1d6bbd81f31868121a50b06d8188e1f9",
+                    "commit" : "161cd47e91fd58ac17490ef4d742dc98bb4cf60e",
                     "dest" : "src/golang.org/x/net"
                 },
                 {
@@ -45,8 +45,8 @@
                 {
                     "type" : "git",
                     "url" : "https://github.com/Unrud/remote-touchpad",
-                    "tag" : "0.0.7",
-                    "commit" : "057342bbadb31f01218efb8f4177a167434f5fd9",
+                    "tag" : "0.0.8",
+                    "commit" : "820149a140bbf1d1c3d6befcf44c45c7ef7751c7",
                     "dest" : "src/github.com/unrud/remote-touchpad"
                 }
             ],
