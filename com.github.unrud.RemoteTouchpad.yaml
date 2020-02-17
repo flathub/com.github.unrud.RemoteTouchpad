@@ -14,7 +14,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/golang/net
-        commit: c0dbc17a35534bf2e581d7a942408dc936316da4
+        commit: 16171245cfb220d5317888b716d69c1fb4e7992b
         dest: src/golang.org/x/net
       - type: git
         url: https://github.com/skip2/go-qrcode
@@ -30,8 +30,8 @@ modules:
         dest: src/salsa.debian.org/go-team/packages/golang-dbus.git
       - type: git
         url: https://github.com/Unrud/remote-touchpad
-        tag: 0.0.15
-        commit: dfba2b6f627e6a1cd3b1b3c71cb343a36ad330c9
+        tag: 0.0.16
+        commit: 8e94866d923567e2bcad320d3afe2cba4eb80a0f
         dest: src/github.com/unrud/remote-touchpad
     buildsystem: simple
     build-commands:
