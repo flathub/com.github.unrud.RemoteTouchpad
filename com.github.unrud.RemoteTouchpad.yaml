@@ -31,7 +31,7 @@ modules:
       - type: git
         url: https://github.com/Unrud/remote-touchpad
         tag: 0.0.16
-        commit: 8e94866d923567e2bcad320d3afe2cba4eb80a0f
+        commit: 330e3c1619c045ae38a63f22e00ee169a45bd7dc
         dest: src/github.com/unrud/remote-touchpad
     buildsystem: simple
     build-commands:
