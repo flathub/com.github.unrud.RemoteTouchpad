@@ -30,8 +30,8 @@ modules:
         dest: src/salsa.debian.org/go-team/packages/golang-dbus.git
       - type: git
         url: https://github.com/Unrud/remote-touchpad
-        tag: 0.0.16
-        commit: 330e3c1619c045ae38a63f22e00ee169a45bd7dc
+        tag: 0.0.17
+        commit: afcfa8a67acded1d956a3719ea11b0cf4bd1e308
         dest: src/github.com/unrud/remote-touchpad
     buildsystem: simple
     build-commands:
