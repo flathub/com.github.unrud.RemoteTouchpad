@@ -14,7 +14,7 @@ modules:
     sources:
       - type: git
         url: https://github.com/golang/net
-        commit: ff2c4b7c35a07b0c1e90ce72aa7bfe41bb66a3cb
+        commit: a91f0712d120a21e49061d61eb6ba9b88cb0d376
         dest: src/golang.org/x/net
       - type: git
         url: https://github.com/skip2/go-qrcode
@@ -22,7 +22,7 @@ modules:
         dest: src/github.com/skip2/go-qrcode
       - type: git
         url: https://github.com/elazarl/go-bindata-assetfs
-        commit: d0111fe6fb11d467f8aa090457c2edaa4a2d7bab
+        commit: 234c15e7648ff35458026de92b34c637bae5e6f7
         dest: src/github.com/elazarl/go-bindata-assetfs
       - type: git
         url: https://salsa.debian.org/go-team/packages/golang-dbus.git
@@ -30,8 +30,8 @@ modules:
         dest: src/salsa.debian.org/go-team/packages/golang-dbus.git
       - type: git
         url: https://github.com/Unrud/remote-touchpad
-        tag: 0.0.17
-        commit: afcfa8a67acded1d956a3719ea11b0cf4bd1e308
+        tag: 0.0.18
+        commit: 7c0d47539403bdf9dba26be79f165f056e58db93
         dest: src/github.com/unrud/remote-touchpad
     buildsystem: simple
     build-commands:
