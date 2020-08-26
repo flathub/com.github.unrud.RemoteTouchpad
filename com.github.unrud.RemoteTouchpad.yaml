@@ -14,11 +14,11 @@ modules:
     sources:
       - type: git
         url: https://github.com/golang/net
-        commit: a91f0712d120a21e49061d61eb6ba9b88cb0d376
+        commit: 3edf25e44fccea9e11b919341e952fca722ef460
         dest: src/golang.org/x/net
       - type: git
         url: https://github.com/skip2/go-qrcode
-        commit: 9434209cb0863a5f3c316b49a8abb7f7dc80610a
+        commit: da1b6568686e89143e94f980a98bc2dbd5537f13
         dest: src/github.com/skip2/go-qrcode
       - type: git
         url: https://github.com/elazarl/go-bindata-assetfs
@@ -30,13 +30,12 @@ modules:
         dest: src/salsa.debian.org/go-team/packages/golang-dbus.git
       - type: git
         url: https://github.com/Unrud/remote-touchpad
-        tag: 0.0.18
-        commit: 7c0d47539403bdf9dba26be79f165f056e58db93
+        tag: 1.0.0
+        commit: 6d68809ccf6b57602ca646dbfcbdd47cb8a0eefc
         dest: src/github.com/unrud/remote-touchpad
     buildsystem: simple
     build-commands:
-      - . /usr/lib/sdk/golang/enable.sh; env GOPATH="$(pwd)" go build -tags 'portal x11'
-        github.com/unrud/remote-touchpad
+      - . /usr/lib/sdk/golang/enable.sh; env GOPATH="$(pwd)" go build -tags 'portal x11' github.com/unrud/remote-touchpad
       - install -Dm0755 -t /app/bin remote-touchpad
       - install -Dm0755 -t /app/bin src/github.com/unrud/remote-touchpad/desktop/remote-touchpad-wait-on-error
       - install -Dm0644 -t /app/share/metainfo src/github.com/unrud/remote-touchpad/desktop/com.github.unrud.RemoteTouchpad.appdata.xml
@@ -44,5 +43,5 @@ modules:
       - |
         for s in 64 128 256 512; do
           install -Dm0644 src/github.com/unrud/remote-touchpad/desktop/remote-touchpad_${s}.png \
-            /app/share/icons/hicolor/${s}x${s}/apps/com.github.unrud.RemoteTouchpad.png
+            /app/share/icons/hicolor/${s}x${s}/apps/com.github.unrud.RemoteTouchpad.png || exit 1
         done
