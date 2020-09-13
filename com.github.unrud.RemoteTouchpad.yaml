@@ -46,7 +46,7 @@ modules:
         dest: src/golang.org/x/text
         url: https://github.com/Unrud/remote-touchpad
         tag: v1.0.1
-        commit: f0bfee5f18f9fef6d20d619e89b430e6d3cc3a74
+        commit: 8139cf07341d7b1efd32f4f95aa0dcb4c2ad06de
         dest: src/github.com/unrud/remote-touchpad
     buildsystem: simple
     build-commands:
