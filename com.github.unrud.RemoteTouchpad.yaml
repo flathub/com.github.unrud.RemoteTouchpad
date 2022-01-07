@@ -37,7 +37,7 @@ modules:
       - type: git
         url: https://github.com/Unrud/remote-touchpad
         tag: v1.0.5
-        commit: 3774273b7e97403b3f3095cc6d9b72c76e9bb7ba
+        commit: 02fa08e26660047ed43fc583a15b2fb873962c8a
     buildsystem: simple
     build-commands:
       - . /usr/lib/sdk/golang/enable.sh; go build -tags portal,x11
