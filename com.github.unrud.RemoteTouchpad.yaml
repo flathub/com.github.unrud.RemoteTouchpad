@@ -29,15 +29,15 @@ modules:
         dest: vendor/github.com/skip2/go-qrcode
       - type: git
         url: https://github.com/golang/net
-        commit: 5cfca573fb4de1b4540d42c216f39c8d1cbbb494
+        commit: cd36cc0744dd695657988f15f08446dc81e16efc
         dest: vendor/golang.org/x/net
       - type: file
         path: modules.txt
         dest: vendor
       - type: git
         url: https://github.com/Unrud/remote-touchpad
-        tag: v1.0.5
-        commit: 02fa08e26660047ed43fc583a15b2fb873962c8a
+        tag: v1.1.0
+        commit: 15b05b5fa623417c2dd00dbe992b5fbed7cac3f7
     buildsystem: simple
     build-commands:
       - . /usr/lib/sdk/golang/enable.sh; go build -tags portal,x11
