@@ -14,11 +14,6 @@ modules:
     sources:
       # Vendor dependencies: go mod vendor -v
       - type: git
-        url: https://github.com/elazarl/go-bindata-assetfs
-        tag: v1.0.1
-        commit: 234c15e7648ff35458026de92b34c637bae5e6f7
-        dest: vendor/github.com/elazarl/go-bindata-assetfs
-      - type: git
         url: https://github.com/godbus/dbus
         tag: v5.0.6
         commit: daa017464e266380cdeb4e6f9613eba9182b59a3
@@ -36,8 +31,8 @@ modules:
         dest: vendor
       - type: git
         url: https://github.com/Unrud/remote-touchpad
-        tag: v1.1.0
-        commit: 15b05b5fa623417c2dd00dbe992b5fbed7cac3f7
+        tag: v1.2.0
+        commit: 523d2039b6b9dce632ccf2cd001847e13f88215b
     buildsystem: simple
     build-commands:
       - . /usr/lib/sdk/golang/enable.sh; go build -tags portal,x11
