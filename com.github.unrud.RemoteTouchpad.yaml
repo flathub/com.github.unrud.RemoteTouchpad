@@ -12,11 +12,21 @@ finish-args:
 modules:
   - name: remote-touchpad
     sources:
-      # Vendor dependencies: go mod vendor -v
+      - type: git
+        url: https://github.com/Unrud/remote-touchpad
+        tag: v1.2.1
+        commit: 1675d5d2f8b54026121fec27158fce5950d1d1ef
+        x-checker-data:
+          type: json
+          url: https://api.github.com/repos/Unrud/remote-touchpad/releases/latest
+          tag-query: '.tag_name'
+      - type: shell
+        commands:
+          - . /usr/lib/sdk/golang/enable.sh; go mod vendor -e
       - type: git
         url: https://github.com/godbus/dbus
-        tag: v5.0.6
-        commit: daa017464e266380cdeb4e6f9613eba9182b59a3
+        tag: v5.1.0
+        commit: e523abc905595cf17fb0001a7d77eaaddfaa216d
         dest: vendor/github.com/godbus/dbus/v5
       - type: git
         url: https://github.com/skip2/go-qrcode
@@ -24,19 +34,8 @@ modules:
         dest: vendor/github.com/skip2/go-qrcode
       - type: git
         url: https://github.com/golang/net
-        commit: cd36cc0744dd695657988f15f08446dc81e16efc
+        commit: 355a448f1bc9c459b279e1cf88367d58b98e186e
         dest: vendor/golang.org/x/net
-      - type: file
-        path: modules.txt
-        dest: vendor
-      - type: git
-        url: https://github.com/Unrud/remote-touchpad
-        tag: v1.2.0
-        commit: 523d2039b6b9dce632ccf2cd001847e13f88215b
-        x-checker-data:
-          type: json
-          url: https://api.github.com/repos/Unrud/remote-touchpad/releases/latest
-          tag-query: '.tag_name'
     buildsystem: simple
     build-commands:
       - . /usr/lib/sdk/golang/enable.sh; go build -tags portal,x11
