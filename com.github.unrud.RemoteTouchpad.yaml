@@ -14,12 +14,12 @@ modules:
     sources:
       - type: git
         url: https://github.com/Unrud/remote-touchpad
-        tag: v1.2.1
-        commit: 1675d5d2f8b54026121fec27158fce5950d1d1ef
+        tag: v1.2.0
+        commit: 523d2039b6b9dce632ccf2cd001847e13f88215b
         x-checker-data:
           type: json
           url: https://api.github.com/repos/Unrud/remote-touchpad/releases/latest
-          tag-query: '.tag_name'
+          tag-query: .tag_name
       - type: shell
         commands:
           - . /usr/lib/sdk/golang/enable.sh; go mod vendor -e
