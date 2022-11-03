@@ -19,7 +19,7 @@ modules:
         x-checker-data:
           type: json
           url: https://api.github.com/repos/Unrud/remote-touchpad/releases/latest
-          tag-query: '.tag_name'
+          tag-query: .tag_name
       - type: shell
         commands:
           - . /usr/lib/sdk/golang/enable.sh; go mod vendor -e
