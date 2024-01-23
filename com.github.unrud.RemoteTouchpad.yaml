@@ -14,8 +14,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/Unrud/remote-touchpad
-        tag: v1.4.3
-        commit: 7f7604a462237980cfba9b1a474e73b779e2d353
+        tag: v1.4.4
+        commit: cc143b59e66b4adc01bbe86b7bd262bb5efcab8d
         x-checker-data:
           type: json
           url: https://api.github.com/repos/Unrud/remote-touchpad/releases/latest
