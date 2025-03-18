@@ -15,15 +15,12 @@ modules:
     sources:
       - type: git
         url: https://github.com/Unrud/remote-touchpad
-        tag: v1.4.8
-        commit: 4fb452c5427aeaefdf8da50aadf6ec30136096bd
+        tag: v1.5.0
+        commit: d48d9aed3da33cbbd70f0eaf2c752490d8b72ee5
         x-checker-data:
           type: json
           url: https://api.github.com/repos/Unrud/remote-touchpad/releases/latest
           tag-query: .tag_name
-      - type: shell
-        commands:
-          - . /usr/lib/sdk/golang/enable.sh; go mod vendor -e
       - type: git
         url: https://github.com/godbus/dbus
         tag: v5.1.0
@@ -35,9 +32,17 @@ modules:
         dest: vendor/github.com/skip2/go-qrcode
       - type: git
         url: https://github.com/golang/net
-        tag: v0.28.0
-        commit: 4542a42604cd159f1adb93c58368079ae37b3bf6
+        tag: v0.37.0
+        commit: 99b3ae0643f9a2f9d820fcbba5f9e4c83b23bd48
         dest: vendor/golang.org/x/net
+      - type: git
+        url: https://github.com/golang/crypto
+        tag: v0.36.0
+        commit: 49bf5b80c8108983f588ecabd7bf996e6e63a515
+        dest: vendor/golang.org/x/crypto
+      - type: file
+        path: modules.txt
+        dest: vendor
     buildsystem: simple
     build-commands:
       - . /usr/lib/sdk/golang/enable.sh; go build -tags portal,x11
