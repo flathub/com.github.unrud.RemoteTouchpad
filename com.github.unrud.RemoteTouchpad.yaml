@@ -1,6 +1,6 @@
 app-id: com.github.unrud.RemoteTouchpad
 runtime: org.freedesktop.Platform
-runtime-version: '24.08'
+runtime-version: '25.08'
 sdk: org.freedesktop.Sdk
 command: remote-touchpad
 sdk-extensions:
@@ -15,8 +15,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/Unrud/remote-touchpad
-        tag: v1.5.0
-        commit: d48d9aed3da33cbbd70f0eaf2c752490d8b72ee5
+        tag: v1.5.2
+        commit: 800171efdd86160d4676967459101155ff053faa
         x-checker-data:
           type: json
           url: https://api.github.com/repos/Unrud/remote-touchpad/releases/latest
@@ -32,13 +32,13 @@ modules:
         dest: vendor/github.com/skip2/go-qrcode
       - type: git
         url: https://github.com/golang/net
-        tag: v0.37.0
-        commit: 99b3ae0643f9a2f9d820fcbba5f9e4c83b23bd48
+        tag: v0.46.0
+        commit: 2002a064a49010d8b881673c73f04e0b741e7c32
         dest: vendor/golang.org/x/net
       - type: git
         url: https://github.com/golang/crypto
-        tag: v0.36.0
-        commit: 49bf5b80c8108983f588ecabd7bf996e6e63a515
+        tag: v0.43.0
+        commit: 627cb894b6b2021e34c4ad4af4c0a963127491e4
         dest: vendor/golang.org/x/crypto
       - type: file
         path: modules.txt
