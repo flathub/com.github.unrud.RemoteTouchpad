@@ -15,8 +15,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/Unrud/remote-touchpad
-        tag: v1.5.4
-        commit: a77f3aa8ecf8b38f789d7a8ddefcb9cc4407d0fc
+        tag: v1.5.5
+        commit: d7cd061142df1366cf7eef844d34f65022fdd122
         x-checker-data:
           type: json
           url: https://api.github.com/repos/Unrud/remote-touchpad/releases/latest
@@ -32,13 +32,13 @@ modules:
         dest: vendor/github.com/skip2/go-qrcode
       - type: git
         url: https://github.com/golang/net
-        tag: v0.57.0
-        commit: b8f09f6f062ceb4531b7af4bd17a5c8fe9c4b2b5
+        tag: v0.59.0
+        commit: 540d04cfe5028e2655754591a4d3e08c586809f2
         dest: vendor/golang.org/x/net
       - type: git
         url: https://github.com/golang/sys
-        tag: v0.47.0
-        commit: 9e7e939dcafac07e8ab4cffa6e5fc74908413f00
+        tag: v0.48.0
+        commit: 613e2570718ecde85c04e69ebd5585c3881c442c
         dest: vendor/golang.org/x/sys
       - type: file
         path: modules.txt
